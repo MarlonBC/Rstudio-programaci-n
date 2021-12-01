@@ -13,7 +13,7 @@ Lliuya Anderson - Briceño Marlon - Lavado Kresly
 
     ## [1] 1
 
-## ***2. ¿Es el numero 4560 divisible por 3? ***
+## ***2. ¿Es el numero 4560 divisible por 3?***
 
 ``` r
 0 == (4560%%3)
