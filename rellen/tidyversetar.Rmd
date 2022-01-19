@@ -2,7 +2,7 @@
 title: "tidyverse"
 author: "Marlon Gonzalo Briceño Cárdenas"
 date: "18/1/2022"
-output: html_document
+output: github_document
 ---
 
 # *Ejercicios tidyverse*
