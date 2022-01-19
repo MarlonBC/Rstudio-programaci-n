@@ -1,0 +1,79 @@
+---
+title: "Examen"
+author: "Marlon Gonzalo Briceño Cárdenas"
+date: "10/12/2021"
+output: html_document
+---
+# *EXAMEN*
+## **1. Crear una funci ́on que permita calcular el  ́angulo entre las rectas L1 y L2 teniendo sus pendientes como**
+```{r}
+Anguloentredosrectas<-function(m1,m2,Interseccion=TRUE){if(Interseccion!=FALSE){print((m2-m1)/(1+m1*m2))
+  }else{print("Indeterminado")}}
+Anguloentredosrectas(1,1,F)
+Anguloentredosrectas(1,1)
+```
+# **3.**
+## a)
+```{r}
+Frutas<-read.csv("D:\\Users\\MARLON\\Downloads\\dataset-fruits.csv")
+View(Frutas)
+Frutas$ï.._id<-NULL
+Frutas
+```
+## b)Resumen
+```{r}
+str(Frutas)
+head(Frutas)
+tail(Frutas)
+dim(Frutas)
+```
+## c)
+```{r}
+require(tidyverse)
+  Chile<-(Frutas%>%select(aÃ.o,pais_origen,producto,moneda_cod,moneda,totales)
+    %>%group_by(pais_origen)
+    %>%filter(pais_origen=="Chile"))
+  Chile
+```
+## Ganancia Palta
+```{r}
+require(tidyverse)
+DatosChile<-(Frutas%>%select(aÃ.o,pais_origen,producto,moneda_cod,moneda,totales))%>%group_by(pais_origen)%>%filter(pais_origen=="Chile")
+Palta<-DatosChile%>%filter(producto=="Palta")
+Gananciapalta<-Palta%>%summarise(sum(totales))
+Gananciapalta
+```
+## Ganancia del Kiwi
+```{r}
+require(tidyverse)
+DatosChile<-(Frutas%>%select(aÃ.o,pais_origen,producto,moneda_cod,moneda,totales))%>%group_by(pais_origen)%>%filter(pais_origen=="Chile")
+Kiwi<-DatosChile%>%filter(producto=="Kiwi")
+Gananciakiwi<-Kiwi%>%summarise(sum(totales))
+Gananciakiwi
+```
+## d)
+
+## e)
+```{r}
+require(tidyverse)
+names(Frutas)
+DatosChile<-(Frutas%>%select(aÃ.o,pais_origen,producto,moneda_cod,moneda,totales))%>%group_by(pais_origen)%>%filter(pais_origen=="Chile")
+Kiwi<-DatosChile%>%filter(producto=="Kiwi")
+Palta<-DatosChile%>%filter(producto=="Palta")
+```
+# ganancia del Kiwi
+```{r}
+Gananciakiwi<-Kiwi%>%summarise(sum(totales))
+```
+# Ganancia Palta
+```{r}
+Gananciapalta<-Palta%>%summarise(sum(totales))
+```
+# Grafica
+```{r,error=TRUE}
+require(plotly)
+df<-data.frame(Kiwi$pais_origen,Kiwi$totales,Palta$totales)
+df
+plot_ly(df,x=Kiwi$pais_origen,y=Kiwi$totales,name="Kiwi",type="bar")%>%
+  add_trace(y=Palta$totales,name="Palta")
+```

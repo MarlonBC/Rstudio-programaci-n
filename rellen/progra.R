@@ -54,7 +54,7 @@ quantile(nota,46.875/100)
 length(nota[nota>=4.90])/length(nota)*100
 quantile(nota,c(0/100,46.875/100,66/100,100/100))
 ## **8.Realiza el gráfico de diagramas de caja de las notas de cada grupo, para poder comparar el nivel de cada uno de ellos.**
-boxplot(nota~grupo)
+boxplot(nota~grupo,xlab = "Salones", ylab = "Notas", main="Diagrama de cajas", col=c(6,2,3,4,5))
 boxplot(grupo)
 ## **9.Si la variable conc recoge la concentración de plomo (en ppm) en el aire de cierta zona durante un día completo
   ### *a.¿Cuál ha sido la concentración máxima?*
