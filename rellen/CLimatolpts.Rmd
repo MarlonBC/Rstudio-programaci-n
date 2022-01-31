@@ -49,6 +49,6 @@ homogsplit("Ptest",1965,2005,44,-108,0,0,std=3,nm=0,ndec = 2,gp=4)
 library(rio)
 export(est.c,"Petest_tarea.xlsx")
 ```
-¡[](D:/Users/MARLON/Desktop/a after/rellen/excel.png)
-¡[](D:/Users/MARLON/Desktop/a after/rellen/excelreult.png)
+![](D:/Users/MARLON/Desktop/a after/rellen/excel.png)
+![](D:/Users/MARLON/Desktop/a after/rellen/excelreult.png)
 

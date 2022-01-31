@@ -65,7 +65,7 @@ homogen('Tmax', 2001, 2003, suf='m', nm=12, std=3, ndec=2, gp=3, expl=TRUE)
     ## 
     ## HOMOGEN() APPLICATION OUTPUT  (From R's contributed package 'climatol' 3.1.1)
     ## 
-    ## =========== Homogenization of Tmax, 2001-2003. (Sun Jan 30 23:06:48 2022)
+    ## =========== Homogenization of Tmax, 2001-2003. (Sun Jan 30 23:35:24 2022)
     ## 
     ## Parameters: varcli=Tmax anyi=2001 anyf=2003 suf=m nm=12 nref=10,10,4 std=3 swa=NA ndec=2 dz.max=5 dz.min=-5 wd=0,0,100 snht1=0 snht2=0 tol=0.02 maxdif=0.005 mxdif=0.005 maxite=999 force=FALSE wz=0.001 trf=0 mndat=NA gp=3 ini=NA na.strings=NA vmin=NA vmax=NA nclust=100 cutlev=NA grdcol=#666666 mapcol=#666666 hires=TRUE expl=TRUE metad=FALSE sufbrk=m tinc=NA tz=UTC cex=1.2 verb=TRUE
     ## 
@@ -90,7 +90,7 @@ homogen('Tmax', 2001, 2003, suf='m', nm=12, std=3, ndec=2, gp=3, expl=TRUE)
     ## Last series readjustment (please, be patient...)
 
     ## 
-    ## ======== End of the missing data filling process, after 0.37 secs 
+    ## ======== End of the missing data filling process, after 0.28 secs 
     ## 
     ## ----------- Final computations:
     ## 
@@ -972,7 +972,7 @@ homogsplit("Ptest",1965,2005,44,-108,0,0,std=3,nm=0,ndec = 2,gp=4)
     ## 
     ## HOMOGSPLIT() APPLICATION OUTPUT  (From R's contributed package 'climatol' 3.1.1)
     ## 
-    ## =========== Homogenization of Ptest, 1965-2005. (Sun Jan 30 23:06:48 2022)
+    ## =========== Homogenization of Ptest, 1965-2005. (Sun Jan 30 23:35:25 2022)
     ## 
     ## Parameters: varcli=Ptest anyi=1965 anyf=2005 xc=44 yc=-108 xo=0 yo=0 maponly=FALSE suf=NA nm=0 nref=10,10,4 swa=NA std=3 ndec=2 dz.max=5 dz.min=-5 wd=0,0,100 snht1=25 snht2=25 tol=0.02 maxdif=NA mxdif=NA force=FALSE wz=0.001 trf=0 mndat=NA gp=4 ini=NA na.strings=NA maxite=999 vmin=NA vmax=NA nclust=100 grdcol=#666666 mapcol=#666666 hires=TRUE expl=FALSE metad=FALSE sufbrk=m tinc=NA tz=UTC cex=1.2 verb=TRUE x=NA
     ## 
@@ -1002,7 +1002,7 @@ homogsplit("Ptest",1965,2005,44,-108,0,0,std=3,nm=0,ndec = 2,gp=4)
     ## 
     ## HOMOGEN() APPLICATION OUTPUT  (From R's contributed package 'climatol' 3.1.1)
     ## 
-    ## =========== Homogenization of Ptest-1, 1965-2005. (Sun Jan 30 23:06:49 2022)
+    ## =========== Homogenization of Ptest-1, 1965-2005. (Sun Jan 30 23:35:25 2022)
     ## 
     ## Parameters: varcli=Ptest-1 anyi=1965 anyf=2005 suf=NA nm=0 nref=10,10,4 std=3 swa=NA ndec=2 dz.max=5 dz.min=-5 wd=0,0,100 snht1=25 snht2=25 tol=0.02 maxdif=0.005 mxdif=0.005 maxite=999 force=FALSE wz=0.001 trf=0 mndat=NA gp=4 ini=NA na.strings=NA vmin=NA vmax=NA nclust=100 cutlev=NA grdcol=#666666 mapcol=#666666 hires=TRUE expl=FALSE metad=FALSE sufbrk=m tinc=NA tz=UTC cex=1.2 verb=TRUE
     ## 
@@ -1228,7 +1228,7 @@ homogsplit("Ptest",1965,2005,44,-108,0,0,std=3,nm=0,ndec = 2,gp=4)
     ## Last series readjustment (please, be patient...)
 
     ## 
-    ## ======== End of the homogenization process, after 30.6 secs 
+    ## ======== End of the homogenization process, after 31.76 secs 
     ## 
     ## ----------- Final computations:
     ## 
@@ -1292,7 +1292,7 @@ homogsplit("Ptest",1965,2005,44,-108,0,0,std=3,nm=0,ndec = 2,gp=4)
     ## 
     ## No target stations in this area
     ## 
-    ## ======== End of homogenization of overlapping areas, after 30.88 secs 
+    ## ======== End of homogenization of overlapping areas, after 32 secs 
     ## 
     ## ----------- Generated output files: -------------------------
     ## 
@@ -1323,8 +1323,5 @@ library(rio)
 export(est.c,"Petest_tarea.xlsx")
 ```
 
-    ## Warning in file.create(to[okay]): cannot create file 'Petest_tarea.xlsx', reason
-    ## 'Permission denied'
-
-¡[](D:/Users/MARLON/Desktop/a%20after/rellen/excel.png)
-¡[](D:/Users/MARLON/Desktop/a%20after/rellen/excelreult.png)
+![](D:/Users/MARLON/Desktop/a%20after/rellen/excel.png)
+![](D:/Users/MARLON/Desktop/a%20after/rellen/excelreult.png)
